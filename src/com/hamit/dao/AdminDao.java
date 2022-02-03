@@ -21,9 +21,9 @@ public class AdminDao implements IDaoImplement<AdminDto> {
 			preparedStatement.setString(4, dto.getAdminEmail());
 			int rowsEfected = preparedStatement.executeUpdate();
 			if (rowsEfected > 0) {
-				System.out.println(AdminDto.class + " Baþarýlý bir þekilde eklendi.");
+				System.out.println(AdminDto.class + " Baï¿½arï¿½lï¿½ bir ï¿½ekilde eklendi.");
 			} else {
-				System.out.println("AdminDto eklemede sýkýntý var .....");
+				System.out.println("AdminDto eklemede sï¿½kï¿½ntï¿½ var .....");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -43,9 +43,9 @@ public class AdminDao implements IDaoImplement<AdminDto> {
 			preparedStatement.setInt(5, dto.getAdminId());
 			int rowsEfected = preparedStatement.executeUpdate();
 			if (rowsEfected > 0) {
-				System.out.println(AdminDto.class + " Baþarýlý bir þekilde güncellendi.");
+				System.out.println(AdminDto.class + " Baï¿½arï¿½lï¿½ bir ï¿½ekilde gï¿½ncellendi.");
 			} else {
-				System.out.println("AdminDto güncelleme sýkýntý var .....");
+				System.out.println("AdminDto gï¿½ncelleme sï¿½kï¿½ntï¿½ var .....");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -61,9 +61,9 @@ public class AdminDao implements IDaoImplement<AdminDto> {
 			preparedStatement.setInt(1, dto.getAdminId());
 			int rowsEfected = preparedStatement.executeUpdate();
 			if (rowsEfected > 0) {
-				System.out.println(AdminDto.class + " Baþarýlý bir þekilde silindi.");
+				System.out.println(AdminDto.class + " Baï¿½arï¿½lï¿½ bir ï¿½ekilde silindi.");
 			} else {
-				System.out.println("AdminDto silmede sýkýntý var .....");
+				System.out.println("AdminDto silmede sï¿½kï¿½ntï¿½ var .....");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
